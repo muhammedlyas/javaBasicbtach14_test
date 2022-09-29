@@ -1,0 +1,61 @@
+/* package reviewclass2;
+
+public class IfElseIfDemo2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	   int number = 30;
+	   
+	   if(number == 10)
+	   {
+		   System.out.println("number is 10");
+	   }
+	   else if(number==20)
+	   {
+		   System.out.println("number is 20");
+	   }
+	   else if(number==30)
+	   {
+		   System.out.println("number is 30");
+	   }
+	   
+	   /*
+	    * Nested if conditions are conditions which are dependent on each other if outer condition
+	    * not true inner-condition is never checked inner-condition is only checked when outer-condition is passed
+	    */
+	   
+	   int money = 10;
+	   
+	   if(money>10)
+	   {
+		   System.out.println("Lets buy some eggs");
+	   }
+	   int no0fEggs=2;
+	   
+	   if(no0fEggs>0)
+	   {
+		   System.out.println("lets boil the eggs");
+	   }
+	   
+	   /*
+        * nextLine is a special method that can capture spaces and enters as well 
+        * when we use any method like nextInt() or nextBoolean(), nextDouble() and after that if we use
+        * nextLine() we need to discard that enter by using an extra nextLine() call 
+        */
+
+       Scanner scanner=new Scanner(System.in);
+
+       System.out.println("Pelease Enter your age");
+       int age=scanner.nextInt();
+
+       System.out.println("Pelease Enter your name");
+       scanner.nextLine();
+       String name=scanner.nextLine();
+       System.out.println(name+" is "+age+" years old");
+
+
+   
+	}
+
+}
